@@ -59,10 +59,70 @@ main{
     /* para preencher o espaço disponível elemento usado fili */
     object-fit: fili;
 }
-h1{
+h2{
     text-align: center;
     background-color: var(--primary-color);
     color: var(--secondary-color);
 
     margin: 1rem 0;
+}
+
+
+
+.card-conteiner{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    gap:1rem;
+    
+}
+
+.card{
+
+    border: 1px solid black;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 9px;
+    width: 200px;
+    height: 250px;
+
+/* quando voce quer que o curso mude para um dedinho segue a seguinte estrutura */
+    cursor: pointer;
+    transition: 1s 
+
+}
+
+.card:hover{
+/*  */
+    box-shadow: 5px 5px 10px 0px rgba(15, 15, 15, 0.966);
+/* vc pode colocar a função zoom expandir com o curso scale:(cal...*/
+
+}
+/* deixar a imagem com borda superior arredondada */
+.card-img img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 9px 9px 0 0;
+}
+
+.card-text{
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.card-container a{
+text-decoration: none;
+}
+
+.detalhe{
+    display: flex;
+    justify-content: center;
+     align-items: center;
+
+}
+#texto .detalhe{
+    width: 50%;
+    padding: 1rem;
+    text-align: center;
+    margin: 0 auto;
 }
