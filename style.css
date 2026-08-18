@@ -38,17 +38,22 @@ footer{
     justify-content: center;
 }
 
+nav a{
+    text-decoration: none;
+    padding: 1rem;
+    color: var(--secondary-color);
+}
 nav a:hover{
     background-color: var(--secondary-color);
     color: var(--terceary-color);
-    border-raidius: 20px;
+    border-radius: 20px;
 }
 
 main{
     padding: 1rem;
-    background-color: var(--secondary-color);
+    /* background-color: var(--secondary-color);
     color: var(--terceary-color);
-    min-height: 80vh;
+    min-height: 80vh; */
 }
 
 
@@ -69,10 +74,10 @@ h2{
 
 
 
-.card-conteiner{
+.card-container{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    justify-content: center;
+    justify-items: center;
     gap:1rem;
     
 }
@@ -119,10 +124,240 @@ text-decoration: none;
     justify-content: center;
      align-items: center;
 
-}
+} 
+
 #texto .detalhe{
     width: 50%;
     padding: 1rem;
     text-align: center;
     margin: 0 auto;
 }
+.main-detalhes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------------------------------------------------   CADASTRO   ------------------------------------------------ */
+
+form{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 10px;
+    width: 300px;
+/* controlar o filho as divs */
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* mexendo nos filhos */
+
+.form-item{
+    margin: 1rem 0;
+    display: flex;
+    /* alinhar as estruturas das caixas ou outras coisas */
+    justify-content: space-between;
+    /* alinhar os itens */
+    align-items: center;
+    /* ocupar todo o espaço  */
+    width: 100%;
+}
+/* formatar os inputs: todos os inputs que tiverem dentros dos forms item */
+
+.form-item input{
+    border-radius: 8px;
+    padding: 0.5rem;
+    border: none;
+    width: 75%;
+
+}
+
+/* editar botoes */
+button{
+    background-color:var(--secondary-color);
+    color: var(--primary-color);
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin: 1rem;
+    border: 1px solid var(--primary-color);
+    cursor: pointer   
+    /* maozinha */
+    
+    }
+
+/* quando o mouse passar pelo botao */
+button:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 1px solid var(--terceary-color);
+}
+
+
+/* ______________________________________________________  logim  ________________________________________________ */
+
+
+.login{
+
+margin-top: 200px;
+/* controlar o filho as divs */
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.login-item{
+    margin: 1rem 0;
+    display: flex;
+    /* alinhar as estruturas das caixas ou outras coisas */
+    justify-content: space-between;
+    /* alinhar os itens */
+    align-items: center;
+    /* ocupar todo o espaço  */
+    width: 100%;
+}  
+
+.login-item input{
+    border-radius: 8px;
+    padding: 0.5rem;
+    border: none;
+    width: 75%;
+
+}
+
+/* editar botoes */
+b.bt-entrar{
+    background-color:var(--secondary-color);
+    color: var(--primary-color);
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin: 1rem;
+    border: 1px solid var(--primary-color);
+    font-size: 30px;
+    cursor: pointer   
+    /* maozinha */
+    
+    }
+
+/* quando o mouse passar pelo botao */
+button:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 1px solid var(--terceary-color);
+}
+
+.form-item{
+    margin: 1rem 0;
+    display: flex;
+    /* alinhar as estruturas das caixas ou outras coisas */
+    justify-content: space-between;
+    /* alinhar os itens */
+    align-items: center;
+    /* ocupar todo o espaço  */
+    width: 100%;
+}
+/* formatar os inputs: todos os inputs que tiverem dentros dos forms item */
+
+.form-item input{
+    border-radius: 8px;
+    padding: 0.5rem;
+    border: none;
+    width: 75%;
+
+}
+
+/* ______________________________________________________  resposividade index ________________________________________________ */
+
+@media only screen and (max-width: 600px){
+    .card-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    header{
+        flex-direction: column;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width:900px){
+    .card-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (min-width: 900px) and (max-width:1200px){
+    .card-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ______________________________________________________  resposividade login ________________________________________________ */
+
+
+
+@media only screen and (max-width: 600px){
+    .login-item{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    header{
+        flex-direction: column;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width:900px){
+    .login-item{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (min-width: 900px) and (max-width:1200px){
+    .login-item{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+} 
+
+
+
+
+
+/* ______________________________________________________  resposividade detalhes ________________________________________________ */
+
+
+@media only screen and (max-width: 600px){
+    .detalhe{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr)
+    }
+    header{
+        flex-direction: column;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    #descricao{
+   padding: 10 rem;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width:900px){
+    .detalhe{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (min-width: 900px) and (max-width:1200px){
+    .detalhe{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+} 
