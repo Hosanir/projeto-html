@@ -1,28 +1,9 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>biblioteca</title>
-    <link rel="stylesheet" href="style.css">
-</head>
 
 
-<body>
-    <header>
-        <!---logo-->
-        <img src="https://picsum.photos/100" alt="Logo da Biblioteca" class="logo">
+    <?php
 
-        <!-- menu -->
-        <!-- menu -->
-        <nav>
-            <a href="index.html">inicio</a>
-            <a href="cadastro.html">cadastro</a>
-            <a href="login.html">login </a>
-        </nav>
-
-    </header>
+       require_once __DIR__"/../../templades/cabecalho.php"
+    ?>
 
 
     <main class="main-detalhes">
@@ -82,9 +63,10 @@
 
 
 
-    <footer>
-        <p>2026</p>
-    </footer>
+    <?php
+
+       require_once __DIR__"/../../templades/rodape.php"
+    ?>
 
 </body>
 

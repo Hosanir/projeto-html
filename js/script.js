@@ -1,3 +1,4 @@
+/* A
 let btn_surpresa = document.getElementById("surpresa");
 
 btn_surpresa.addEventListener("click", () => {
@@ -49,3 +50,24 @@ for (const item of cards) {
             align-items: center;
             z-index: 1000;
         }
+    
+     */
+
+    let olho = document.getElementById("olho_fechado")
+    let senha = document.getElementById("senha")
+    let visivel = false
+
+    // criar variavel clicar no olho
+
+    if(visivel == false){
+        olho.src = "Image/projeto html/img/olho-de-perto.png"
+        senha.type = "text"
+        visivel = true
+    } else{
+        olho.src = "Image/projeto html/img/invisivel.png"
+        senha.type = "password"
+        visivel = false 
+    }
+
+
+    //_______________________________ Menu _____________________

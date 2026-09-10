@@ -284,6 +284,11 @@ button:hover{
 
 }
 
+#olho_fechado{
+    width: 24px;
+    height: 24px;
+}
+
 
 
 /* ______________________________________________________  resposividade index ________________________________________________ */
@@ -378,3 +383,57 @@ button:hover{
     }
 
 } 
+
+
+/* ______________________________________________________  cadastro_categoria  ________________________________________________ */
+
+.cadastro-categoria{
+
+display: flex;
+justify-content: center;
+
+
+
+}
+.categgoria{
+    margin: 1rem 0;
+    display: flex;
+    /* alinhar as estruturas das caixas ou outras coisas */
+    justify-content: space-between;
+    /* alinhar os itens */
+    align-items: center;
+    /* ocupar todo o espaço  */
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+/* ____________________________________________________  fim cadastro_categoria  ________________________________________________ */
+
+
+
+/* ______________________________________________________  cadastro_livros  ________________________________________________ */
+
+.cadastro-livro{
+
+display: flex;
+justify-content: center;
+
+
+
+}
+.livro{
+    margin: 1rem 0;
+    display: flex;
+    /* alinhar as estruturas das caixas ou outras coisas */
+    justify-content: space-between;
+    /* alinhar os itens */
+    align-items: center;
+    /* ocupar todo o espaço  */
+    width: 40%;
+}

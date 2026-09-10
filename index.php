@@ -1,32 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>biblioteca</title>
-    <link rel="stylesheet" href="style.css">
-    <script>src"script.js" defer </script>
-    
-</head>
+<?php
 
-
-<body>
-    <header>
-        <!---logo-->
-        <img src="https://picsum.photos/100" alt="Logo da Biblioteca" class="logo">
-
-        <!-- menu -->
-        <nav>
-            <a href="index.html">inicio</a>
-            <a href="cadastro.html">cadastro</a>
-            <a href="login.html">login </a>
-
-        </nav>
-
-    </header>
-
-
+    require_once __DIR__"./templades/_rodape.php"
+?>
     <main>
         <img src="https://picsum.photos/900/200" alt="Imagem da Biblioteca" id="jumbo">
         <h2>Biblioteca </h2>
@@ -159,11 +135,11 @@
         </div>
     </main>
 
+    <?php
 
+    require_once "_rodape.php"
+    ?>
 
-    <footer>
-        <p>2026</p>
-    </footer>
 
 </body>
 
