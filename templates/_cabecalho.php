@@ -1,7 +1,3 @@
-
-
-
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -9,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>biblioteca</title>
-    <link rel="stylesheet" href="style.css">
-    <script>src"script.js" defer </script>
+    <link rel="stylesheet" href="/biblioteca/css/style.css">
+    <script>src"./js/script.js" defer </script>
     
 </head>
 
@@ -23,9 +19,9 @@
         <!-- menu -->
         <nav>
             <a href="index.php">inicio</a>
-            <a href="cadastro.php">cadastro</a>
-            <a href="login.php">login </a>
-            <a href="perfil.php">perfil </a>
+            <a href="biblioteca/views/usuario/cadastro.php">cadastro</a>
+            <a href="biblioteca/views/usuario/login.php">login </a>
+            <a href="biblioteca/views/usuario/perfil.php">perfil </a>
 
 
         </nav>
