@@ -1,45 +1,56 @@
+<?php
 
-    <?php
-
-       require_once __DIR__"/../../templades/cabecalho.php"
+require_once __DIR__
+"/../../templades/cabecalho.php"
     ?>
- 
-    </header>
+
+</header>
 
 
-    <main class="detalhe">  
+<main class="detalhe">
 
-        <div id="img">
-            <img src="https://picsum.photos/300/400" alt="">
-        </div>
+    <div id="img">
+        <?php if ($livro['capa'] == null): ?>
 
-        <div id="titulo">
-        <p>Titulo: O Senhor dos Anéis</p>
-        <p>Autor: John Doe</p>
-        <p>Ano do Livro: 1954</p>
-        </div>
+            <img src="/biblioteca/img/sem-imagem.png" alt="">
 
-        <div id="descricao">
-            <p>O Senhor dos Anéis, obra de J.R.R. Tolkien, acompanha a jornada do jovem hobbit Frodo Bolseiro. 
-                <br>Ele recebe a missão de atravessar a Terra-média até a Montanha da Perdição para destruir 
-                <br>o Um Anel e impedir o retorno do Senhor das Trevas, Sauron.</p>
-        </div>
-        <p></p>
- 
-    </main>
+        <?php else: ?>
+            <img src="/biblioteca/img/capa/uploads/<?php echo $livro['capa']; ?>" alt="">
+        <?php endif; ?>
+    </div>
+    
+
+    <div id="texto-detalhe">
+        <h2><?= $livro['titulo'] ?> </h2>
+        <br>
+        <p><?= $livro['ano_pub'] ?></p>
+        <p><?= $livro['autor'] ?></p>
+        <p>Categoria</p>
+    </div>
+
+    <div id="descricao">
+        <p>O Senhor dos Anéis, obra de J.R.R. Tolkien, acompanha a jornada do jovem hobbit Frodo Bolseiro.
+            <br>Ele recebe a missão de atravessar a Terra-média até a Montanha da Perdição para destruir
+            <br>o Um Anel e impedir o retorno do Senhor das Trevas, Sauron.
+        </p>
+    </div>
+    <p></p>
+
+</main>
 
 
 
-    <?php
+<?php
 
-    require_once "_rodape;"
+require_once "_rodape;"
     ?>
 
 </body>
 
-    <?php
+<?php
 
-    require_once __DIR__"/../../templades/rodape.php"
+require_once __DIR__
+"/../../templades/rodape.php"
     ?>
 
 </html>
