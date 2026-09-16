@@ -1,30 +1,29 @@
 
         <?php
 
-           require_once __DIR__"/../../templades/cabecalho.php"
+           require_once __DIR__. "/../../templates/_cabecalho.php";
         ?>
 
     
-        <main>
-            <h1>Perfil</h1>
-            <div>
-                    
-                <div>
-                    <p>NOME DO CABOCO!</p>
-                    <p>caboco@gmail.com</p> 
+    <main class="container-centraliza">
+        <div class="container-perfil">
+            <div class="container-perfil">
+                <div class="itens-perfil">
+                    <p>Nome da Pessoa</p>
+                    <p>Email da Pessoa</p>
                 </div>
 
-                <div>
-                        <th><button class="btn-adm_livros">Adiministrador Livros</button></th>
-                        <th><button class="btn-adm_categorias">Administrar Categorias</button></th>
+                <div class="itens-perfil">
+                    <a href="/biblioteca/views/livro/gerenciar_livros.php" class="link-btn">Gerenciar livros</a>
+                    <a href="/biblioteca/views/categoria/gerenciar_categorias.php" class="link-btn">Gerenciar categorias</a>
                 </div>
-                
             </div>
-        </main>
+        </div>
+    </main>
         
         <?php
 
-            require_once __DIR__"/../../templades/rodapa.php"
+            require_once __DIR__ . "/../../templates/_rodape.php";
         ?>
 
     </body>

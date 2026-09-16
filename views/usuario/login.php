@@ -2,7 +2,7 @@
 
         <?php
 
-         require_once __DIR__"/../../templades/cabecalho.php"
+         require_once __DIR__ . "/../../templates/_cabecalho.php";
         ?>
         <main class="login">
                 <form action="" method="post" enctype="multipart/form-data">
@@ -39,7 +39,7 @@
 
         
         <?php
-    require_once __DIR__"/../../templades/rodape.php"
+    require_once __DIR__  . "/../../templates/_rodape.php";
         ?>
     
 

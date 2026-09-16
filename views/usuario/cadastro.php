@@ -2,70 +2,44 @@
 
     <?php
 
-       require_once __DIR__"/../../templades/cabecalho.php"
+     require_once __DIR__ . "/../../templates/_cabecalho.php";
     ?>
 
-
-    <main class="main-detalhes">
-
+    <main class="main-detalhe">
         <form action="" method="post" enctype="multipart/form-data">
+            <img src="https://picsum.photos/160" alt="" class="logo">
 
-            <!---logo-->
-            <img src="https://picsum.photos/100" alt="Logo da Biblioteca" class="logo">
             <div class="form-item">
-
-                <!---nome-->
                 <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome ">
-
+                <input type="text" name="nome" id="nome">
             </div>
 
             <div class="form-item">
-
-                <!---nome-->
-                <label for="email">e-mail</label>
-                <input type="email" name="email" id="email ">
-
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
             </div>
 
-
             <div class="form-item">
-
-                <!---nome-->
                 <label for="senha">Senha</label>
-                <input type="password" name="senha" id="email ">
-
+                <input type="password" name="senha" id="senha">
             </div>
 
-
             <div class="form-item">
-
-                <!---nome-->
-             <!--    <label class= "txt-perfil" for="foto">Foto de Perfil</label> -->
-                <!-- <input type="file" name="foto" id="foto ">!
- -->
-                <label class="upload-btn">
-                 Anexar Foto de Perfil
-                  <input type="file">
-                </label
-
+                <label for="foto">Foto de perfil</label>
+                <input type="file" name="foto" id="foto">
             </div>
 
             <button type="submit">Cadastrar</button>
 
+
         </form>
-
-
-
-
-
     </main>
 
 
 
     <?php
 
-       require_once __DIR__"/../../templades/rodape.php"
+       require_once __DIR__ . "/../../templates/_rodape.php"
     ?>
 
 </body>
