@@ -5,18 +5,13 @@ require_once __DIR__ . "/models/livros.php";
 
 $id = $_GET["id"];
 
-
-SELECT * FROM livros WHWERE id= $id;
 ?>
-
-
-
 
     <main>
         <img src="https://picsum.photos/900/200" alt="Imagem da Biblioteca" id="jumbo">
 
         <h2>Biblioteca </h2>
-            <?php if ?>
+           <?php if (count($resultado) == 0): ?>
                 <div class="card-container">
 
                 // como colocar todos os card dos livros na pagina index automaticamnte lincando as informacoes 
@@ -32,12 +27,6 @@ SELECT * FROM livros WHWERE id= $id;
 
                                     <img src="/biblioteca/img/sem-imagem.png" alt="">
                                 <?php else: ?>
-                                    //para colocar una imagem automatica que funcione referenciando o livro coloquei a pasta  uploads 
-                                    dentro da pasta img e dentro da pasta uploads coloquei as imagens dos livros, e no banco de dados 
-                                    na tabela livros na coluna capa coloquei o nome do arquivo da imagem correspondente a cada livro, 
-                                    assim quando o foreach percorrer o array de livros ele vai verificar se a coluna capa é nula ou não, 
-                                    se for nula ele vai exibir a imagem padrão sem-imagem.png, caso contrário ele vai exibir a imagem 
-                                    correspondente ao livro que está sendo percorrido no foreach.
                                     <img src="/biblioteca/img/capa/uploads/<?php echo $livro['capa']; ?>" alt="">
                                 <?php endif; ?>
                             </div>
@@ -52,7 +41,7 @@ SELECT * FROM livros WHWERE id= $id;
                     <?php endforeach; ?>
             
                 </div>
-            <?php endif; ?>    
+            <?php endif; ?>
     </main>
 
     <?php

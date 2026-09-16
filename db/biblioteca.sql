@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS livro (
     id_livro INT PRIMARY KEY AUTO_INCREMENT,
     titulo VARCHAR(255) NOT NULL,
     ano_pub VARCHAR(4),
-    autor VARCHAR(255)
+    autor VARCHAR(255),
     resumo TEXT,
     capa VARCHAR(255),
     id_categoria INT,
