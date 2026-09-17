@@ -6,7 +6,7 @@
     ?>
 
     <main class="main-detalhe">
-        <form action="" method="post" enctype="multipart/form-data">
+        <form action="/biblioteca/controllers/usuario_add_controller.php" method="post" enctype="multipart/form-data">
             <img src="https://picsum.photos/160" alt="" class="logo">
 
             <div class="form-item">

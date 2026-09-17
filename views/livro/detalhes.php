@@ -1,8 +1,21 @@
 <?php
 
-require_once __DIR__
-"/../../templades/cabecalho.php"
-    ?>
+require_once __DIR__ . "/../../templades/cabecalho.php";
+require_once __DIR__ . "/../../models/livro.php";
+
+    if (isser($_GET['id'])) {
+        $id = $_GET['id'];
+        $livros = Livro::buscarPorId($id);
+    } else {
+        header('Location: /biblioteca/index.php');
+        exit();
+    }
+    if (!$livro){
+        header('Location: /biblioteca/index.php');
+        exit();
+    }
+    
+?>
 
 </header>
 
